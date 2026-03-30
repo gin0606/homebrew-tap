@@ -5,22 +5,22 @@
 class Gw < Formula
   desc "Git worktree wrapper with lifecycle hooks"
   homepage "https://github.com/gin0606/gw"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gin0606/gw/releases/download/v0.4.0/gw_0.4.0_darwin_amd64.tar.gz"
-      sha256 "81d9f4e02376659e06ef2ee28426502dc771325d1df0ba2cd5b8f7c4fe1288a5"
+      url "https://github.com/gin0606/gw/releases/download/v0.5.0/gw_0.5.0_darwin_amd64.tar.gz"
+      sha256 "c4627a38ba5302bea5d87fe68dfc5e88bdb525d5165e5519a24902ced5de0050"
 
-      def install
+      define_method(:install) do
         bin.install "gw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gin0606/gw/releases/download/v0.4.0/gw_0.4.0_darwin_arm64.tar.gz"
-      sha256 "7cc4e9746e6f6adbefe686aea8b1f76c19ef1e3f8ff5103860f1b434a144144a"
+      url "https://github.com/gin0606/gw/releases/download/v0.5.0/gw_0.5.0_darwin_arm64.tar.gz"
+      sha256 "6d9b5f76f825e0a549d3142735eab9f7f97044f6b44a7c50871367f71fd6d485"
 
-      def install
+      define_method(:install) do
         bin.install "gw"
       end
     end
@@ -28,16 +28,16 @@ class Gw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gin0606/gw/releases/download/v0.4.0/gw_0.4.0_linux_amd64.tar.gz"
-      sha256 "ffea3cc6797ee8804c42e22fa921d995eb51f697992ddaa0abb8e0808f9bacfd"
-      def install
+      url "https://github.com/gin0606/gw/releases/download/v0.5.0/gw_0.5.0_linux_amd64.tar.gz"
+      sha256 "8d3d9490412f45faad83e7e7bd5c55ddc94ce5a2e1f9786b21634569e0d0cbe4"
+      define_method(:install) do
         bin.install "gw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gin0606/gw/releases/download/v0.4.0/gw_0.4.0_linux_arm64.tar.gz"
-      sha256 "79c07dc112e534a97419fce9b79dab2e8f0b37126dc1bd8c5021e8b3dfda93ab"
-      def install
+      url "https://github.com/gin0606/gw/releases/download/v0.5.0/gw_0.5.0_linux_arm64.tar.gz"
+      sha256 "898be0b6eaa7141124175edfb4e3461b5b0593c03c6ed33d9387c48012da94b1"
+      define_method(:install) do
         bin.install "gw"
       end
     end
