@@ -1,6 +1,6 @@
 cask "ediro" do
-  version "0.1.1"
-  sha256 "c31d026bf50638cf86cb86193407128a0e1f5a347faf18a4948a2202750865a5"
+  version "0.1.2"
+  sha256 "250ba34618c57b66dd8bbb2a4a49df104b5bd00f558bafea8af1f24544277249"
 
   url "https://github.com/gin0606/ediro/releases/download/v#{version}/Ediro-#{version}.zip"
   name "Ediro"
