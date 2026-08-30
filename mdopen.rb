@@ -1,8 +1,8 @@
-class Mdo < Formula
+class Mdopen < Formula
   desc "Convert Markdown to a single HTML page and open it in the browser"
-  homepage "https://github.com/gin0606/mdo"
+  homepage "https://github.com/gin0606/mdopen"
   version "0.0.1"
-  url "https://github.com/gin0606/mdo/releases/download/v#{version}/mdo-#{version}-macos-arm64.tar.gz"
+  url "https://github.com/gin0606/mdopen/releases/download/v#{version}/mdopen-#{version}-macos-arm64.tar.gz"
   sha256 "cc0ab349fc734036f30f1acfbe46516e289c4638cbd035231db6277ed014a605"
   license any_of: ["MIT", "Apache-2.0"]
 
@@ -12,10 +12,10 @@ class Mdo < Formula
   depends_on macos: :ventura
 
   def install
-    bin.install "mdo"
+    bin.install "mdopen"
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/mdo --version")
+    assert_match version.to_s, shell_output("#{bin}/mdopen --version")
   end
 end
