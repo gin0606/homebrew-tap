@@ -1,6 +1,6 @@
 cask "mdopen-app" do
-  version "0.0.1"
-  sha256 "e24d7dc90a6b46d94fea0707e765a8cb97ba1e09215b47f976070146b9615d40"
+  version "0.1.0"
+  sha256 "2c81f03b72ef5325dbc18aaec74c6e6d80cb21f1d2cd4b02a0ed808ccde0e610"
 
   url "https://github.com/gin0606/mdopen/releases/download/v#{version}/mdopen.app-#{version}-macos-arm64.zip"
   name "mdopen"
