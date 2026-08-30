@@ -1,6 +1,6 @@
 cask "mdo" do
-  version "0.0.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  version "0.0.1"
+  sha256 "e24d7dc90a6b46d94fea0707e765a8cb97ba1e09215b47f976070146b9615d40"
 
   url "https://github.com/gin0606/mdo/releases/download/v#{version}/mdo.app-#{version}-macos-arm64.zip"
   name "mdo"
