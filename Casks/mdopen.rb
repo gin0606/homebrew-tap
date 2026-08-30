@@ -1,4 +1,4 @@
-cask "mdopen-app" do
+cask "mdopen" do
   version "0.1.0"
   sha256 "2c81f03b72ef5325dbc18aaec74c6e6d80cb21f1d2cd4b02a0ed808ccde0e610"
 
@@ -13,7 +13,6 @@ cask "mdopen-app" do
 
   app "mdopen.app"
 
-  # CLI は Formula が入れる。ここでも bin に出すと、両方入れた環境で
-  # 同じ場所を取り合う。token を formula と分けているのは、同名だと
-  # `brew install gin0606/tap/mdopen` がどちらとも解釈できる旨を毎回警告するため。
+  # CLI は mdhtml formula が入れる。ここでも bin に出すと、両方入れた環境で
+  # 同じ場所を取り合う。
 end
