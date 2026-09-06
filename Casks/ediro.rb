@@ -16,9 +16,9 @@ cask "ediro" do
 
   # ad-hoc 署名なので、ダウンロードで付く quarantine が残ったままだと
   # Gatekeeper が起動を拒否する。
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Ediro.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Ediro.app"]
   end
 
   # 開きっぱなしで使うので、起動中に足元のバンドルを差し替えない。
