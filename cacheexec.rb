@@ -1,26 +1,26 @@
 class Cacheexec < Formula
   desc "Cache non-interactive command output and exit status"
   homepage "https://github.com/gin0606/cacheexec"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/gin0606/cacheexec/releases/download/v#{version}/cacheexec-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "834116b448bd40af3cb3b6541d2add871c4ba3d758fc633c38d5eb9acdefabf5"
+      sha256 "4d9fa9793d2f0fc5d1ed27b3927a465817881aa4d375566a4c8607a6370e6ea1"
     elsif Hardware::CPU.intel?
       url "https://github.com/gin0606/cacheexec/releases/download/v#{version}/cacheexec-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "2289cbaa5acfcda0e1664d98776714eba461fe9832a2ef44735484ce78ef6b35"
+      sha256 "c937abd9c735ceaa1bcb2c3d3c047b19f5358f03c455a62a38df5db19a35bfc7"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/gin0606/cacheexec/releases/download/v#{version}/cacheexec-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "9530f7740f6b2ba9beaf7bc67cda60f21cf65d4d9193aaf7c22fcdcd8e7a9a19"
+      sha256 "3fcdf6eefc6b0201407139a56a5612dd99b0299c02a0c77c55f9272bfb786edb"
     elsif Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/gin0606/cacheexec/releases/download/v#{version}/cacheexec-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "d2130aff1bda8746f4c9796355fcc6971427de9bc436131caa28caf50ba59c96"
+      sha256 "bac0eb42708d15a4948551667ac4a536e3be47346050b4f776698c20feedda7f"
     end
   end
 
