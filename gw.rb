@@ -5,20 +5,20 @@
 class Gw < Formula
   desc "Git worktree wrapper with lifecycle hooks"
   homepage "https://github.com/gin0606/gw"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gin0606/gw/releases/download/v0.6.0/gw_0.6.0_darwin_amd64.tar.gz"
-      sha256 "2de8bb468c528a2b2cc40afd1eb3a88bec2636c7697fe42d12d5f654fe1a5e1b"
+      url "https://github.com/gin0606/gw/releases/download/v0.7.0/gw_0.7.0_darwin_amd64.tar.gz"
+      sha256 "b2bd1abcfd6bc7b50ecb8c9e22243577dacb86045c78c11e1056d9bca140714c"
 
       define_method(:install) do
         bin.install "gw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gin0606/gw/releases/download/v0.6.0/gw_0.6.0_darwin_arm64.tar.gz"
-      sha256 "ba4b95cdaa795c6647d8305bb0e616c1da0f810a9e037ceeee8eb2697cac1bdc"
+      url "https://github.com/gin0606/gw/releases/download/v0.7.0/gw_0.7.0_darwin_arm64.tar.gz"
+      sha256 "cda2d0faf0402c6c44137fd2fc8742b1d20f120e9053f86d16ccb0a1a2e5e6fe"
 
       define_method(:install) do
         bin.install "gw"
@@ -28,15 +28,15 @@ class Gw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gin0606/gw/releases/download/v0.6.0/gw_0.6.0_linux_amd64.tar.gz"
-      sha256 "93965ddd4ee1da0774d6038ceda23994ef0348e2d5daaf90eba4c5da4fa2f9d8"
+      url "https://github.com/gin0606/gw/releases/download/v0.7.0/gw_0.7.0_linux_amd64.tar.gz"
+      sha256 "812d80fbdf6b648b4879fc7f612261c2be227b7dff1e05b1ee4a1d67d581f29e"
       define_method(:install) do
         bin.install "gw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gin0606/gw/releases/download/v0.6.0/gw_0.6.0_linux_arm64.tar.gz"
-      sha256 "7ef9885d1a6167d791d344a113c0ae13029a4a2d98eed571500669c7a53d6c42"
+      url "https://github.com/gin0606/gw/releases/download/v0.7.0/gw_0.7.0_linux_arm64.tar.gz"
+      sha256 "45f7a225e9e8e67de6881fb6c9e89f8738476dd2860339d6fb8d140ec7d266c1"
       define_method(:install) do
         bin.install "gw"
       end
