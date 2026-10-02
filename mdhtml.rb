@@ -1,9 +1,9 @@
 class Mdhtml < Formula
   desc "Convert Markdown to a single HTML page and print where it went"
   homepage "https://github.com/gin0606/mdopen"
-  version "0.2.1"
+  version "0.3.0"
   url "https://github.com/gin0606/mdopen/releases/download/v#{version}/mdhtml-#{version}-macos-arm64.tar.gz"
-  sha256 "369fedc7b63c35dd43c5e1d3f43886f4392dd5319c4d6b5b1109eb8df3193fe8"
+  sha256 "e117cc62b7cf9f304a3cfd148194dfc675e8e142e3d4ca9a550ffe73b625eead"
   license any_of: ["MIT", "Apache-2.0"]
 
   # 配布しているのは arm64 の単一アーキテクチャで、bundle も CLI も macOS 13 を
