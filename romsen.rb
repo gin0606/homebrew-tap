@@ -1,9 +1,9 @@
 class Romsen < Formula
   desc "Print what the Slack desktop app shows as text, via the Accessibility API"
   homepage "https://github.com/gin0606/romsen"
-  version "0.2.0"
+  version "0.2.1"
   url "https://github.com/gin0606/romsen/releases/download/v#{version}/romsen-v#{version}-macos-arm64.tar.gz"
-  sha256 "836b2a4dab32f4fd4986317f19c6566d646b5ea7e3c487d495aa27c7fd00cc47"
+  sha256 "e61b66da9ea775b1c3e363c8c56c35124bbcb79ddfae34a068af64d0613355e6"
   license "MIT"
 
   depends_on arch: :arm64
