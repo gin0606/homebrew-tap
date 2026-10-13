@@ -7,10 +7,9 @@ cask "ediro" do
   desc "Single-window Markdown editor for drafting chat messages"
   homepage "https://github.com/gin0606/ediro"
 
-  # 配布物は swift build が吐く単一アーキテクチャのバイナリ。macOS 26 は
-  # 一部の Intel Mac でも動くので、そちらに入らないようにする。
+  # 配布物は swift build が吐く arm64 だけのバイナリで、macOS 27 以降を要求する。
   depends_on arch: :arm64
-  depends_on macos: :tahoe
+  depends_on macos: :golden_gate
 
   app "Ediro.app"
 
