@@ -1,9 +1,9 @@
 cask "axon-gui" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.3.0"
-  sha256 arm:   "c72e5a4fa36b1b31de234cbc492da648d25c2024c2ba3dd44ea3d1200e7bdfd5",
-         intel: "3ad60f7819dd0f87292d9adeb243fb6a206c2ddc34b3109939dc8d47c8955f5c"
+  version "0.4.0"
+  sha256 arm:   "9e6691a2d1e6ddc72b4ea063cb29fe5e5e6c134e6dda5e661b73a524fea0f4d6",
+         intel: "0bd0cda47c1b1a698292f5abdf2a48b397acc6c7f036f87c674674a2646d6049"
 
   url "https://github.com/gin0606/axon/releases/download/v#{version}/axon-gui-v#{version}-#{arch}-apple-darwin.zip"
   name "Axon"
