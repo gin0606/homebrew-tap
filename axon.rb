@@ -1,7 +1,7 @@
 class Axon < Formula
   desc "Local issue tracker for Issues and Groups"
   homepage "https://github.com/gin0606/axon"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
 
   depends_on macos: :sequoia
@@ -9,10 +9,10 @@ class Axon < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/gin0606/axon/releases/download/v#{version}/axon-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "61dce1cbc01735fdc5cfe3a733cd0b7f9ebe1a6be1aae0127593e0327a18dee2"
+      sha256 "f7412cde6bc1589ce1efef58895f1057020626967424d5b005a7a5488c865e28"
     elsif Hardware::CPU.intel?
       url "https://github.com/gin0606/axon/releases/download/v#{version}/axon-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "d6b790403243bcc8c92066ed687d18af2e5310d4af4d4e2e9adbbdafd93c62ea"
+      sha256 "c7344f687294c9c49174efa3997f0de21c07eefa91350599520d79fa4439a504"
     end
   end
 
