@@ -1,15 +1,13 @@
 cask "axon-gui" do
-  arch arm: "aarch64", intel: "x86_64"
+  version "0.7.0"
+  sha256 "853109c1f78875447d7db08b07f90dfb8284d4032c73d96e5e82e98a1f17c6eb"
 
-  version "0.6.0"
-  sha256 arm:   "3d6240a82323e839e649315516dc35cd843a8921c6e0c682866c6b43d9369fa0",
-         intel: "71879c390e9eeb65fb85c4ceaa07f40c44add756643711ae09098cf6ac53fe2c"
-
-  url "https://github.com/gin0606/axon/releases/download/v#{version}/axon-gui-v#{version}-#{arch}-apple-darwin.zip"
+  url "https://github.com/gin0606/axon/releases/download/v#{version}/axon-gui-v#{version}-aarch64-apple-darwin.zip"
   name "Axon"
   desc "Desktop app for browsing Axon issue trackers"
   homepage "https://github.com/gin0606/axon"
 
+  depends_on arch: :arm64
   depends_on macos: :sequoia
 
   app "Axon.app"
